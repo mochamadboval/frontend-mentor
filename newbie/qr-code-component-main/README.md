@@ -6,6 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -19,6 +20,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 #### Mobile
 ![QR code component on mobile](./screenshot-mobile.png)
+
+### Links
+
+- Solution URL: [https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component-main](https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component-main)
+- Live Site URL: [https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component-main/](https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component-main/)
 
 ## My process
 
