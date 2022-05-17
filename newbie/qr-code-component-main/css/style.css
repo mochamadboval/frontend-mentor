@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --color-gray-blue: hsl(220, 15%, 55%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-shadow: hsla(220, 15%, 55%, .1);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-light-gray);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+main > article {
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  box-shadow: 0 2rem 2rem var(--color-shadow);
+  padding: 1.5rem;
+  text-align: center;
+  width: 32rem;
+}
+
+article > img {
+  border-radius: 1rem;
+}
+
+article > h3 {
+  color: var(--color-dark-blue);
+  font-size: 2.2rem;
+  margin-top: 2.5rem;
+}
+
+article > p {
+  color: var(--color-gray-blue);
+  margin: 1.5rem 0 2.5rem;
+  padding: 0 1.5rem;
+}
