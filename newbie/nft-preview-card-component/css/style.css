@@ -27,7 +27,7 @@ body {
   background-color: var(--color-dark-blue-main);
   color: var(--color-soft-blue);
   font-family: 'Outfit', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   height: 100%;
 }
 
@@ -51,7 +51,7 @@ main > article {
   background-color: var(--color-dark-blue-card);
   border-radius: 1.5rem;
   padding: 2rem;
-  width: 31rem;
+  width: 34rem;
 }
 
 article a {
@@ -90,7 +90,7 @@ article > .product {
 }
 
 article > h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-top: 2rem;
 }
@@ -102,7 +102,7 @@ article > p {
 
 article > .info-wrapper {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   justify-content: space-between;
   margin-top: 2rem;
 }
@@ -129,7 +129,7 @@ article > hr {
 article > footer {
   align-items: center;
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 1.5rem;
 }
 
