@@ -23,8 +23,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component](https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component)
-- Live Site URL: [https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component/](https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component/)
+- Solution URL: [https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component-main](https://github.com/mochamadboval/frontend-mentor/tree/main/newbie/qr-code-component-main)
+- Live Site URL: [https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component-main/](https://mochamadboval.github.io/frontend-mentor/newbie/qr-code-component-main/)
 
 ## My process
 
