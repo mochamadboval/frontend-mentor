@@ -64,7 +64,7 @@ article > img {
 }
 
 article > .summary-wrapper {
-  padding: 4rem;
+  padding: 4.5rem 4rem;
 }
 
 .summary-wrapper > h3 {
@@ -86,7 +86,7 @@ article > .summary-wrapper {
   border-radius: 1rem;
   display: flex;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
 }
 
 .plan-wrapper > img {
@@ -124,7 +124,7 @@ article > .summary-wrapper {
   display: block;
   font-size: 1.4rem;
   font-weight: 900;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   padding: 1.5rem 0;
   width: 100%;
 }
