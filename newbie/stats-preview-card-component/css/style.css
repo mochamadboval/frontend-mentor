@@ -1,0 +1,153 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-accent: hsl(277, 64%, 61%);
+  --color-card-background: hsl(244, 38%, 16%);
+  --color-main-background: hsl(233, 47%, 7%);
+  --color-main-headings-stats: hsl(0, 0%, 100%);
+  --color-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-main-background);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+main > article {
+  background-color: var(--color-card-background);
+  border-radius: 1rem;
+  display: flex;
+  width: 108rem;
+}
+
+article > section {
+  padding: 7rem 9.5rem 5rem 6.5rem;
+}
+
+section > h2 {
+  color: var(--color-main-headings-stats);
+  font-size: 3.6rem;
+}
+
+section > h2 > span {
+  color: var(--color-accent);
+}
+
+section > p {
+  color: var(--color-main-paragraph);
+  line-height: 1.5;
+  margin-top: 3rem;
+}
+
+section > div {
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  margin-top: 7rem;
+  padding-right: 4rem;
+}
+
+section > div > p {
+  color: var(--color-stat-headings);
+  line-height: 1.5;
+}
+
+section > div > p > b {
+  color: var(--color-main-headings-stats);
+  font-size: 2.4rem;
+}
+
+article > figure {
+  flex: 0 0 54rem;
+  position: relative;
+}
+
+figure > picture > img {
+  border-radius: 0 1rem 1rem 0;
+}
+
+figure > div {
+  background-color: var(--color-accent);
+  border-radius: 0 1rem 1rem 0;
+  height: 100%;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  main > article {
+    flex-direction: column;
+    width: 34rem;
+  }
+
+  article > section {
+    order: 1;
+    padding: 4rem;
+    text-align: center;
+  }
+
+  section > h2 {
+    font-size: 2.8rem;
+  }
+
+  section > p {
+    margin-top: 2rem;
+  }
+
+  section > div {
+    display: block;
+    margin-top: 3.5rem;
+    padding-right: 0;
+  }
+
+  section > div > p {
+    margin-top: 2rem;
+  }
+
+  article > figure {
+    flex: 0 0 auto;
+  }
+
+  figure > picture > img {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  figure > div {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
