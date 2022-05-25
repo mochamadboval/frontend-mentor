@@ -1,0 +1,117 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-cyan: hsl(185, 75%, 39%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+  --color-dark-grayish-blue: hsl(227, 10%, 46%);
+  --color-desaturated-blue: hsl(229, 23%, 23%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-shadow: hsla(229, 23%, 23%, .1);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-dark-cyan);
+  color: var(--color-dark-grayish-blue);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.4rem;
+  height: 100%;
+  line-height: 1.5;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+main {
+  align-items: center;
+  background: url('../images/bg-pattern-top.svg') -55% 200% no-repeat, url('../images/bg-pattern-bottom.svg') 150% -140% no-repeat;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  padding: 4rem 0;
+}
+
+main > article {
+  background-color: var(--color-white);
+  border-radius: 1.5rem;
+  box-shadow: 0 .5rem .5rem var(--color-shadow);
+  width: 32rem;
+}
+
+article > img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+article > .profile-wrapper {
+  text-align: center;
+}
+
+.profile-wrapper > img {
+  border: .5rem solid var(--color-white);
+  border-radius: 50%;
+  margin-top: -5.8rem;
+}
+
+.profile-wrapper > h3 {
+  color: var(--color-desaturated-blue);
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.profile-wrapper > h3 > span {
+  color: var(--color-dark-grayish-blue);
+  font-weight: 400;
+}
+
+.profile-wrapper > p {
+  margin-top: .5rem;
+}
+
+.profile-wrapper > hr {
+  border-color: var(--color-dark-gray);
+  margin-top: 2rem;
+  opacity: .1;
+}
+
+.profile-wrapper > .profile-stats {
+  display: flex;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.profile-stats > p {
+  flex: 0 0 calc(100% / 3);
+}
+
+.profile-stats > p > b {
+  color: var(--color-desaturated-blue);
+  font-size: 1.8rem;
+}
+
+.profile-stats > p > span {
+  letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    background: url('../images/bg-pattern-top.svg') 130% 175% no-repeat, url('../images/bg-pattern-bottom.svg') -25% -95% no-repeat;
+  }
+}
