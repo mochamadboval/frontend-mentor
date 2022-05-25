@@ -1,0 +1,126 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-background-headings-button: hsl(0, 0%, 95%);
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-background-headings-button);
+  color: var(--color-background-headings-button);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  padding: 4rem 0;
+}
+
+main > article {
+  padding: 4.5rem;
+  width: 30rem;
+}
+
+main > .sedans {
+  background-color: var(--color-bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+
+main > .suvs {
+  background-color: var(--color-dark-cyan);
+}
+
+main > .luxury {
+  background-color: var(--color-very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+
+article > h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4rem;
+  margin-top: 2.5rem;
+}
+
+article > p {
+  color: var(--color-paragraphs);
+  margin-top: 2.5rem;
+}
+
+article > a {
+  background-color: var(--color-background-headings-button);
+  border: .2rem solid var(--color-background-headings-button);
+  border-radius: 3rem;
+  display: inline-block;
+  margin-top: 7.5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+}
+
+.sedans > a {
+  color: var(--color-bright-orange);
+}
+
+.suvs > a {
+  color: var(--color-dark-cyan);
+}
+
+.luxury > a {
+  color: var(--color-very-dark-cyan);
+}
+
+article > a:hover {
+  background-color: transparent;
+  color: var(--color-background-headings-button);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+  }
+
+  main > article {
+    padding: 4rem 3.5rem;
+  }
+
+  main > .sedans {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  main > .luxury {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  article > a {
+    margin-top: 2.5rem;
+  }
+}
