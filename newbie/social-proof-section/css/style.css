@@ -1,0 +1,202 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-dark-magenta: hsl(300, 43%, 22%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-soft-pink: hsl(333, 80%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-rated: hsla(303, 10%, 53%, .1);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-light-grayish-magenta);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+main {
+  background: url('../images/bg-pattern-top-desktop.svg') 0% 0% no-repeat, url('../images/bg-pattern-bottom-desktop.svg') 95% 100% no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 13rem 20rem;
+}
+
+main > .intro {
+  flex: 0 0 50%;
+  padding-right: 14rem;
+}
+
+.intro > h2 {
+  color: var(--color-dark-magenta);
+  font-size: 4.8rem;
+  letter-spacing: -0.2rem;
+  line-height: normal;
+}
+
+.intro > p {
+  color: var(--color-dark-grayish-magenta);
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+main > .rating {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  justify-content: space-evenly;
+  padding-left: 2.5rem;
+}
+
+.rating > p {
+  align-items: center;
+  background-color: var(--color-rated);
+  border-radius: .5rem;
+  color: var(--color-dark-magenta);
+  display: flex;
+  line-height: 0;
+  padding: 1.5rem 3rem;
+  width: 40rem;
+}
+
+.rating > p:nth-of-type(2) {
+  align-self: center;
+}
+
+.rating > p:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.rating > p > span {
+  margin-right: 3rem;
+}
+
+.rating > p > span > img {
+  display: inline;
+}
+
+main > .testimony {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 100%;
+  gap: 2.5rem;
+  height: 25rem;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.testimony > article {
+  background-color: var(--color-dark-magenta);
+  border-radius: 1rem;
+  color: var(--color-white);
+  padding: 4rem 3.5rem;
+}
+
+.testimony > article:nth-of-type(2) {
+  align-self: center;
+}
+
+.testimony > article:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+article > div {
+  align-items: center;
+  display: flex;
+}
+
+article > div > img {
+  border-radius: 50%;
+  height: 3.4rem;
+  margin-right: 2rem;
+}
+
+article > div > p {
+  line-height: 1.2;
+}
+
+article > div > p > span {
+  color: var(--color-soft-pink);
+}
+
+article > p {
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  main {
+    background: url('../images/bg-pattern-top-mobile.svg') 0% 0% no-repeat, url('../images/bg-pattern-bottom-mobile.svg') 100% 200% no-repeat;
+    display: block;
+    padding: 7.5rem 3.6rem;
+  }
+
+  main > .intro {
+    padding: 0;
+    text-align: center;
+  }
+
+  .intro > h2 {
+    font-size: 4rem;
+  }
+
+  main > .rating {
+    display: block;
+    margin-top: 5rem;
+    padding-left: 0;
+  }
+
+  .rating > p {
+    flex-direction: column;
+    line-height: normal;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+  .rating > p > span {
+    margin-right: 0;
+  }
+
+  .rating > p > b {
+    margin-top: 1rem;
+  }
+
+  main > .testimony {
+    display: block;
+    margin-top: 5rem;
+  }
+
+  .testimony > article {
+    margin-top: 1.5rem;
+    padding: 3rem 2.4rem;
+  }
+}
