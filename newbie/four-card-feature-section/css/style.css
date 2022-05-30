@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-blue: hsl(212, 86%, 64%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-light-gray: hsl(0, 0%, 100%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-red: hsl(0, 78%, 62%);
+
+  --color-shadow: hsla(212, 86%, 64%, .1);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-light-gray);
+  color: var(--color-grayish-blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  height: 100%;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+h2, h3 {
+  color: var(--color-dark-blue);
+  font-weight: 600;
+}
+
+header {
+  margin: 8rem auto 0;
+  text-align: center;
+  width: 54rem;
+}
+
+header > h2 {
+  font-size: 3.8rem;
+}
+
+header > h2 > span {
+  font-weight: 200;
+}
+
+header > p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+main article {
+  border-radius: .5rem;
+  border-top: .5rem solid var(--color-dark-blue);
+  box-shadow: 0 2rem 2rem var(--color-shadow);
+  padding: 3rem;
+  width: 37rem;
+}
+
+main .supervisor {
+  border-color: var(--color-cyan);
+}
+
+main .team {
+  border-color: var(--color-red);
+}
+
+main .karma {
+  border-color: var(--color-orange);
+  margin-top: 3rem;
+}
+
+main .calculator {
+  border-color: var(--color-blue);
+}
+
+article > h3 {
+  font-size: 2.3rem;
+}
+
+article > p {
+  margin-top: 1rem;
+}
+
+article > img {
+  width: 5.4rem;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    margin: 8rem 2rem 0;
+    width: auto;
+  }
+
+  header > h2 {
+    font-size: 2.6rem;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 5rem 2rem 0;
+  }
+
+  main article {
+    padding: 2.4rem;
+    width: auto;
+  }
+}
