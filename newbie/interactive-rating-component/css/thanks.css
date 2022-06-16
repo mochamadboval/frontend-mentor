@@ -1,0 +1,16 @@
+article {
+  text-align: center;
+}
+
+article > img {
+  margin: 1rem auto 0;
+}
+
+article > p > .summary {
+  background-color: var(--color-dark-blue);
+  border-radius: 2rem;
+  color: var(--color-orange);
+  display: inline-block;
+  margin-top: 2rem;
+  padding: .6rem 2rem .2rem;
+}

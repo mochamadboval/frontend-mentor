@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive rating component | Frontend Mentor</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/feedback.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap">
+</head>
+<body>
+  <main>
+    <article>
+      <img src="./images/icon-star.svg" alt="">
+      <h3>How did we do?</h3>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <form id="formFeedback" action="./thanks.html" method="post">
+        <section class="rating">
+          <div>
+            <input type="radio" name="rating" value="1" id="one">
+            <label for="one">1</label>
+          </div>
+          <div>
+            <input type="radio" name="rating" value="2" id="two">
+            <label for="two">2</label>
+          </div>
+          <div>
+            <input type="radio" name="rating" value="3" id="three">
+            <label for="three">3</label>
+          </div>
+          <div>
+            <input type="radio" name="rating" value="4" id="four">
+            <label for="four">4</label>
+          </div>
+          <div>
+            <input type="radio" name="rating" value="5" id="five">
+            <label for="five">5</label>
+          </div>
+        </section>
+        <input type="submit" value="SUBMIT">
+      </form>
+    </article>
+  </main>
+
+  <script>
+    const send = document.getElementById('formFeedback');
+    send.addEventListener('submit', (event) => {
+      const rating = document.querySelector('input[name=rating]:checked').value;
+      localStorage.setItem('RatingFM', rating);
+    })
+  </script>
+</body>
+</html>
